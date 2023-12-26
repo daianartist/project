@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" class="css" />
+    <title>DELO Job Search</title>
+</head>
+<body>
+    <header>
+        DELO 
+    </header>
+    
+    <div class="container">
+        <div class="job-cards-container" id="jobCards">
+        </div>
+        <div class="filter-and-interest-container">
+            <form id="filterForm">
+                <label for="salaryInput">Зарплата:</label>
+                <input type="text" id="salaryInput" placeholder="Введите зарплату">
+
+                <label for="cityInput">Город:</label>
+                <input type="text" id="cityInput" placeholder="Введите город">
+
+                <label for="fieldInput">Сфера:</label>
+                <input type="text" id="fieldInput" placeholder="Введите сферу">
+
+                <button type="button" onclick="filterJobs()">Применить</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
